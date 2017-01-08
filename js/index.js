@@ -1,4 +1,14 @@
-var homePageApp = angular.module('homePageApp', []);
+var homePageApp = angular.module('homePageApp', ["ngRoute"]);
+
+homePageApp.config(function($routeProvider){
+  $routeProvider
+  .when("/", {
+    templateUrl : "messages.html"
+  })
+  .when("/class_work", {
+    templateUrl : "class_work.html"
+  });
+});
 
 homePageApp.controller('HomePageController', function
 HomePageController($scope){
