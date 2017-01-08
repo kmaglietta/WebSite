@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
     "angularfire": "^2.2.0",
     "bootstrap": "^3.3.7",
     "firebase": "^3.6.4",
