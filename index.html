@@ -20,6 +20,7 @@
 
 
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body ng-controller="HomePageController">
     <nav class="navbar navbar-default">
@@ -62,7 +63,7 @@
     <!-- post updates and have a form for adding updates. -->
     <ul>
       <li ng-repeat="mes in messages">
-        <h1>{{mes.date}}</h1>
+        <h1 class="test">{{mes.date}}</h1>
         <p>
           {{mes.body}}
         </p>
