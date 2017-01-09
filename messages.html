@@ -1,8 +1,10 @@
-<ul>
-  <li ng-repeat="mes in messages">
-    <h1>{{mes.date}}</h1>
-    <p>
-      {{mes.body}}
-    </p>
-  </li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12" ng-repeat="mes in messages">
+      <h1>{{mes.date}}</h1>
+      <p>
+        {{mes.body}}
+      </p>
+    </div>
+  </div>
+</div>
