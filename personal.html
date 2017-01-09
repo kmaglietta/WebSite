@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4" ng-repeat="pers in personal" ng-class="{hover : mouseover}" ng-mouseenter="mouseover = true"  ng-mouseleave="mouseover = false" ng-init="mouseover = false">
+      <div ng-click="open();">
+        <h2>{{pers.title}}</h2>
+        <p>
+          {{pers.body}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
