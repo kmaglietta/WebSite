@@ -53,6 +53,7 @@ HomePageController($scope){
   }
 });
 
+//http://stackoverflow.com/questions/15266671/angular-ng-repeat-in-reverse
 homePageApp.filter('reverse', function() {
   return function(items) {
     return items.slice().reverse();
