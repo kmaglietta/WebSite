@@ -2,6 +2,7 @@
 //sass --watch sass:css
 
 $main-color     : #444e57;
+$hover-color     : #2B3238;
 $font-color     : #df6aeb;
 //nav-bar colors
 $bgDefault      : #df6aeb;
@@ -66,4 +67,8 @@ $colHighlight   : #D492DB;
 .body {
   background-color: $main-color;
   color: $font-color;
+}
+
+.hover {
+  background-color: $hover-color;
 }

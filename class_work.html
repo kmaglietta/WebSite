@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-sm-4" ng-repeat="cpro in class | reverse">
+    <div class="col-xs-12 col-sm-4" ng-repeat="cpro in class | reverse" ng-class="{hover : mouseover}" ng-mouseenter="mouseover = true"  ng-mouseleave="mouseover = false" ng-init="mouseover = false">
       <div ng-click="open();">
         <h2>{{cpro.title}}</h2>
         <p>
