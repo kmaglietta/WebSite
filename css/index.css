@@ -44,6 +44,10 @@
   color: #df6aeb; }
 
 .hover {
-  background-color: #2B3238; }
+  background-color: #2B3238;
+  cursor: pointer; }
+
+.intro {
+  text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
