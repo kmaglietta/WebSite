@@ -1,1 +1,12 @@
-<h1>Class work</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4" ng-repeat="cpro in class | reverse">
+      <div ng-click="open();">
+        <h2>{{cpro.title}}</h2>
+        <p>
+          {{cpro.body}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ homePageApp.config(function($routeProvider){
   .when("/class_work", {
     templateUrl : "class_work.html"
   });
+
 });
 
 homePageApp.controller('HomePageController', function
@@ -22,4 +23,38 @@ HomePageController($scope){
       body: 'this is a nother test'
     }
   ];
+
+  $scope.class = [
+    {
+      link: 'http://lamp.cse.fau.edu/~kmaglietta2013/HW1/index.html',
+      title: 'First Web Page',
+      body: 'This is my first ever web page!'
+    },
+    {
+      link: 'http://lamp.cse.fau.edu/~kmaglietta2013/hw2/index.html',
+      title: 'Bootstrap Introduction',
+      body: 'First attempt at working with bootstrap'
+    },
+    {
+      link: 'http://lamp.cse.fau.edu/~kmaglietta2013/hw3/index.html',
+      title: 'Speed Converter',
+      body: 'A fully javascript application'
+    },
+    {
+      link: 'http://lamp.cse.fau.edu/~kmaglietta2013/hw4/index.html',
+      title: 'To-Do List',
+      body: 'A to-do list using jQuery'
+    }
+  ];
+
+  $scope.open = function(){
+    console.log(this.cpro.link);
+    window.open(this.cpro.link);
+  }
+});
+
+homePageApp.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
 });
