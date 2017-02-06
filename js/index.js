@@ -98,6 +98,11 @@ HomePageController($scope){
       link: 'https://score-22dc8.firebaseapp.com/',
       title: 'Firebase (Main)',
       body: 'Creating a usful app using the firebase AIP'
+    },
+    {
+      link: 'http://lamp.cse.fau.edu/~kmaglietta2013/face-detection/',
+      title: 'Microsoft Face API',
+      body: 'Using comercialy available API\'s'
     }
   ];
 
